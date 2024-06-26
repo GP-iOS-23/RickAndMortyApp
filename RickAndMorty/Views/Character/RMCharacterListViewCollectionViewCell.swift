@@ -45,13 +45,17 @@ final class RMCharacterListViewCollectionViewCell: UICollectionViewCell {
         contentView.addSubviews(imageView, nameLabel, statusLabel)
         addConstraints()
         setUpLayer()
+        
+        registerForTraitChanges([UITraitUserInterfaceStyle.self], action: #selector(setUpLayer)
+        )
     }
     
     required init?(coder: NSCoder) {
         fatalError("Unsupported")
     }
     
-    private func setUpLayer() {
+    
+    @objc private func setUpLayer() {
         contentView.layer.cornerRadius = 10
         contentView.layer.shadowColor = UIColor.label.cgColor
         contentView.layer.cornerRadius = 4
@@ -79,12 +83,6 @@ final class RMCharacterListViewCollectionViewCell: UICollectionViewCell {
         ])
     }
     
-    
-    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
-        super.traitCollectionDidChange(previousTraitCollection)
-        setUpLayer()
-    }
-
     override func prepareForReuse() {
         super.prepareForReuse()
         imageView.image = nil
@@ -92,7 +90,7 @@ final class RMCharacterListViewCollectionViewCell: UICollectionViewCell {
         statusLabel.text = nil
     }
     
-    public func configure(with viewModel: RMCharacterListViewCollectionViewCellViewModel) {
+    public func configure(with viewModel: RMCharacterCollectionViewCellViewModel) {
         nameLabel.text = viewModel.characterName
         statusLabel.text = viewModel.characterStatusText
         viewModel.fetchImage { [weak self] result in

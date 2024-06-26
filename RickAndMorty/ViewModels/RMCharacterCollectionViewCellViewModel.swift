@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class RMCharacterListViewCollectionViewCellViewModel: Hashable, Equatable{
+final class RMCharacterCollectionViewCellViewModel: Hashable, Equatable{
     
     public let characterName: String
     private let characterStatus: RMCharacterStatus
@@ -35,14 +35,12 @@ final class RMCharacterListViewCollectionViewCellViewModel: Hashable, Equatable{
             completion(.failure(URLError(.badURL)))
             return
         }
-        
-        let request = URLRequest(url: url)
         RMImageLoader.shared.downloadImage(url, completion: completion)
     }
     
     //MARK: - Hashable
     
-    static func == (lhs: RMCharacterListViewCollectionViewCellViewModel, rhs: RMCharacterListViewCollectionViewCellViewModel) -> Bool {
+    static func == (lhs: RMCharacterCollectionViewCellViewModel, rhs: RMCharacterCollectionViewCellViewModel) -> Bool {
         return lhs.hashValue == rhs.hashValue
     }
     
