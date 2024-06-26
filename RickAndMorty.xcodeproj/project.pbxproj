@@ -36,6 +36,7 @@
 		7096BE492C20999200B86E8F /* RMCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7096BE482C20999200B86E8F /* RMCharacterDetailView.swift */; };
 		7096BE4B2C2099B600B86E8F /* RMCharacterDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7096BE4A2C2099B600B86E8F /* RMCharacterDetailViewViewModel.swift */; };
 		7096BE4D2C20A0D800B86E8F /* RMFooterLoadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7096BE4C2C20A0D800B86E8F /* RMFooterLoadingCollectionReusableView.swift */; };
+		70FC3FAF2C2C4894007C0443 /* RMImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70FC3FAE2C2C4894007C0443 /* RMImageLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		7096BE482C20999200B86E8F /* RMCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailView.swift; sourceTree = "<group>"; };
 		7096BE4A2C2099B600B86E8F /* RMCharacterDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewViewModel.swift; sourceTree = "<group>"; };
 		7096BE4C2C20A0D800B86E8F /* RMFooterLoadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMFooterLoadingCollectionReusableView.swift; sourceTree = "<group>"; };
+		70FC3FAE2C2C4894007C0443 /* RMImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMImageLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		703FE8B12C1AA2900094C96A /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				70FC3FAE2C2C4894007C0443 /* RMImageLoader.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				7096BE4B2C2099B600B86E8F /* RMCharacterDetailViewViewModel.swift in Sources */,
 				703FE8CA2C1ABEAE0094C96A /* RMOrigin.swift in Sources */,
 				7096BE3E2C20609000B86E8F /* RMCharacterListView.swift in Sources */,
+				70FC3FAF2C2C4894007C0443 /* RMImageLoader.swift in Sources */,
 				703FE8CC2C1ABF5E0094C96A /* RMSingleLocation.swift in Sources */,
 				703FE8CE2C1AC0D40094C96A /* RMCharacterStatus.swift in Sources */,
 				703FE8D02C1AC1BB0094C96A /* RMCharacterGender.swift in Sources */,
